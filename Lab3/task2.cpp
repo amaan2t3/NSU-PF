@@ -5,21 +5,23 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     float marks;
 
-    cout << "enter Your marks " <<endl;
+    cout << "enter Your marks " << endl;
 
     cin >> marks;
 
-    if(marks >=50){
-        cout <<"Your are Pass.!  "<< marks << endl;
-    }else{
-                cout <<"Your are fail.!"<< marks << endl;
-
+    if (marks >= 50)
+    {
+        cout << "Your are Pass.!  " << marks << endl;
     }
-
+    else
+    {
+        cout << "Your are fail.!" << marks << endl;
+    }
 
     return 0;
 }
