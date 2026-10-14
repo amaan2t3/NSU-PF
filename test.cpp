@@ -3,43 +3,18 @@
 using namespace std;
 
 int main() {
-    int a, b, c, d, e;
+    int num, first, second, third, sum;
 
-    cout << "Enter five numbers: ";
-    cin >> a >> b >> c >> d >> e;
+    cout << "Enter a three-digit number: ";
+    cin >> num;
 
-    int greatest, smallest;
+    first = num / 100;
+    second = (num / 10) % 10;
+    third = num % 10;
 
-    if (a > b)
-        greatest = a;
-    else
-        greatest = b;
+    sum = first + second + third;
 
-    if (c > greatest)
-        greatest = c;
-
-    if (d > greatest)
-        greatest = d;
-
-    if (e > greatest)
-        greatest = e;
-
-    if (a < b)
-        smallest = a;
-    else
-        smallest = b;
-
-    if (c < smallest)
-        smallest = c;
-
-    if (d < smallest)
-        smallest = d;
-
-    if (e < smallest)
-        smallest = e;
-
-    cout << "Greatest number = " << greatest << endl;
-    cout << "Smallest number = " << smallest << endl;
+    cout << "Sum of digits = " << sum << endl;
 
     return 0;
 }
